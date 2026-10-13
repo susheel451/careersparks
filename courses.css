@@ -1,0 +1,115 @@
+.course-img {
+margin-top: 70px;
+}
+
+.corporate-img {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
+}
+
+.rd-logo {
+    width: 178px;
+    height: 120px;
+    margin-top: 15px;
+    margin-right: 60px;
+}
+
+#id1 {
+    display: flex;
+    align-items: centers;
+}
+
+.head {
+    justify-content: center;
+    display: flex;
+    align-items: centers;
+    background-color: #2E47AF;
+}
+
+.catalog {
+    width: 500px;
+    height: 770px;
+    margin-left: -30px;
+}
+
+.desc-img {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.c-img {
+    width: 500px;
+    height: 213px;
+    margin-left: 110px;
+    margin-top: -25px;
+}
+
+.c-img-1 {
+    width: 500px;
+    height: 522px;
+    margin-left: -31px;
+    margin-top: 1px;
+}
+
+
+.course-img {
+    margin-top: 70px;
+    }
+    
+    .corporate-img {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 80px;
+        grid-row-gap: 50px;
+    }
+    
+    @media (max-width: 575.98px) {
+    .course-img {
+        margin-top: 0;
+    }
+    
+    .corporate-img {
+        margin: 0 10px;
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+    }  
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .course-img {
+            margin-top: 0;
+        }
+        
+        .corporate-img {
+            margin: 0 30px;
+            grid-template-columns: auto;
+            grid-row-gap: 20px;
+        }   
+    }
+    
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .course-img {
+            margin-top: 0;
+        }
+        
+        .corporate-img {
+            margin: 0 30px;
+            grid-template-columns: auto auto;
+            grid-row-gap: 40px;
+        } 
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        .course-img {
+            margin-top: 0;
+        }
+        
+        .corporate-img {
+            margin: 0 30px;
+            grid-template-columns: auto auto;
+            grid-row-gap: 40px;
+        }     
+    }
