@@ -10,7 +10,6 @@
 
   var img = box.querySelector("img");
   var caption = box.querySelector("figcaption");
-  var status = box.querySelector(".lightbox-status");
   var closeBtn = box.querySelector(".lightbox-close");
   var prevBtn = box.querySelector(".lightbox-prev");
   var nextBtn = box.querySelector(".lightbox-next");
@@ -30,14 +29,12 @@
     var thumb = list[current].querySelector("img");
     var full = (thumb.getAttribute("data-cld") && window.CS_cloudinaryUrl(thumb.getAttribute("data-cld"), 1600)) ||
       thumb.getAttribute("data-local") || thumb.getAttribute("src");
-    status.textContent = "Loading…";
-    status.hidden = false;
     img.hidden = true;
-    img.onload = function () { status.hidden = true; img.hidden = false; };
-    img.onerror = function () { status.textContent = "Sorry, this image could not be loaded."; };
+    img.onload = function () { img.hidden = false; };
+    img.onerror = function () { img.hidden = true; };
     img.src = full;
     img.alt = thumb.alt;
-    caption.textContent = thumb.alt + " (" + (current + 1) + " of " + list.length + ")";
+    caption.textContent = thumb.alt;
   }
 
   function open(btn) {
@@ -76,12 +73,4 @@
     }
   });
 
-  /* Hide the "no photos" notice once at least one image loads; show it if all fail */
-  var empty = document.getElementById("gallery-empty");
-  if (empty) {
-    setTimeout(function () {
-      var anyLoaded = buttons.some(function (b) { var i = b.querySelector("img"); return i.complete && i.naturalWidth > 0; });
-      empty.hidden = anyLoaded;
-    }, 2500);
-  }
 })();
