@@ -9,5 +9,7 @@
     "dev": "npx -y serve . -l 5500 --no-clipboard",
     "upload": "node scripts/upload.mjs"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "cloudinary": "^2.11.0"
+  }
 }
