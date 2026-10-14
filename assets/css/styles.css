@@ -253,21 +253,8 @@ a:hover { color: var(--royal-600); }
 }
 .media > img, .media > video { width: 100%; height: 100%; object-fit: cover; }
 .media.contain > img { object-fit: contain; padding: var(--space-4); }
-.media.is-fallback > img { display: none; }
-.media.is-fallback::after {
-  content: attr(data-fallback);
-  position: absolute; inset: 0; display: grid; place-items: center; padding: var(--space-5);
-  text-align: center; font: 600 var(--fs-sm)/1.4 var(--font-heading); color: var(--navy-700);
-  background:
-    radial-gradient(circle at 30% 20%, rgba(224,165,38,.18), transparent 55%),
-    linear-gradient(135deg, var(--royal-50), #dfe8f8);
-}
-.media.is-fallback::before {
-  content: ""; position: absolute; left: 50%; top: calc(50% - 46px); width: 34px; height: 34px; margin-left: -17px;
-  border-radius: 10px; border: 2px solid rgba(21,48,90,.35);
-  background: linear-gradient(transparent 60%, rgba(21,48,90,.25) 60%);
-  z-index: 1;
-}
+
+/* Image frames should render the original upload with no generated text or pseudo-element overlays. */
 
 /* ---------- 7. Home hero ---------- */
 .hero {
@@ -297,7 +284,6 @@ a:hover { color: var(--royal-600); }
 .hero-slides { position: relative; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4 / 3.2; box-shadow: var(--shadow-lg); background: var(--navy-700); }
 .hero-slide { position: absolute; inset: 0; margin: 0; border-radius: 0; aspect-ratio: auto; opacity: 0; transition: opacity 1s var(--ease); }
 .hero-slide.is-active, .hero-slides:not(.is-ready) .hero-slide:first-child { opacity: 1; }
-.hero-slide.media.is-fallback::after { background: linear-gradient(135deg, var(--navy-700), var(--royal)); color: rgba(255,255,255,.85); }
 .hero-dots { position: absolute; z-index: 2; left: 50%; bottom: 14px; transform: translateX(-50%); display: flex; gap: 4px; }
 .hero-dots button { width: 28px; height: 28px; padding: 0; border: 0; background: transparent; cursor: pointer; display: grid; place-items: center; }
 .hero-dots button::before { content: ""; width: 8px; height: 8px; border-radius: 99px; background: rgba(255,255,255,.55); transition: width .3s var(--ease), background-color .3s; }

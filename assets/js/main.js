@@ -23,12 +23,7 @@
   };
 
   function markFallback(img) {
-    var frame = img.closest(".media, .brand-mark");
-    if (frame) {
-      frame.classList.add("is-fallback");
-      if (!frame.getAttribute("data-fallback")) frame.setAttribute("data-fallback", img.alt || "Image coming soon");
-    }
-    img.setAttribute("aria-hidden", "true");
+    img.setAttribute("aria-hidden", "false");
   }
 
   function handleError(img) {
@@ -37,7 +32,7 @@
       img.setAttribute("src", local); // Cloudinary failed -> try local copy
       return;
     }
-    markFallback(img);
+    img.setAttribute("aria-hidden", "false");
   }
 
   document.querySelectorAll("img").forEach(function (img) {
@@ -57,8 +52,6 @@
     var sources = video.querySelectorAll("source");
     var last = sources[sources.length - 1];
     var fail = function () {
-      var frame = video.closest(".media");
-      if (frame) { frame.classList.add("is-fallback"); frame.setAttribute("data-fallback", "Video unavailable"); }
       video.hidden = true;
       var section = video.closest("[data-video-section]");
       if (section) {

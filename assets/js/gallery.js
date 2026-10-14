@@ -19,8 +19,7 @@
   function visibleButtons() {
     return buttons.filter(function (b) {
       var item = b.closest(".gallery-item");
-      var frame = b.querySelector(".media");
-      return !item.classList.contains("is-hidden") && !(frame && frame.classList.contains("is-fallback"));
+      return !item.classList.contains("is-hidden");
     });
   }
 
@@ -82,8 +81,7 @@
   if (empty) {
     setTimeout(function () {
       var anyLoaded = buttons.some(function (b) { var i = b.querySelector("img"); return i.complete && i.naturalWidth > 0; });
-      var allFailed = buttons.every(function (b) { return b.querySelector(".media").classList.contains("is-fallback"); });
-      empty.hidden = anyLoaded || !allFailed;
+      empty.hidden = anyLoaded;
     }, 2500);
   }
 })();
