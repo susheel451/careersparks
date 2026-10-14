@@ -1,198 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Spark, Edu Solution & Technology.</title>
-    <link rel="stylesheet" href="career_spark.css"/>
-    <link rel="stylesheet" href="mainpage_slideshow.css"/>
-    <link rel="icon" href="Images/Career_Spark-LOGO2.png"/>
-    <script src="https://kit.fontawesome.com/92b30948e4.js" crossorigin="anonymous"></script>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Career Spark — Career Guidance &amp; Mentoring in Hassan | Edu Solutions &amp; Technologies</title>
+  <meta name="description" content="Career Spark is an experiential career mentoring and guidance venture in Hassan, Karnataka, helping school and college students gain clarity in their career choices and build relevant skills.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Career Spark — Edu Solutions &amp; Technologies">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Career Spark — Career Guidance &amp; Mentoring in Hassan">
+  <meta property="og:description" content="Experiential career mentoring and guidance for school and college students, plus courses in competitive exams, computers, spoken English and more.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="assets/js/site-config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- Topbar UI -->
-    
-    <header>
-        <div class="topbar">
-            <div class="topbar-img-div">
-                <img src="Images/Career_Spark-LOGO2.png" alt="Career Spark LOGO" />
-            </div>
-            <div class="topbar-headings-div">
-                <div class="top-heading"><h1>CAREER SPARK</h1></div>
-                <h4>Edu Solutions & Technologies</h4>
-            </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Career Spark — home">
+        <span class="brand-mark" aria-hidden="true">CS<img src="Images/Career_Spark-LOGO2.png" data-cld="careerspark/brand/career-spark-logo" data-w="120" alt="" width="48" height="48"></span>
+        <span class="brand-text">
+          <span class="brand-name">Career Spark</span>
+          <span class="brand-tag">Edu Solutions &amp; Technologies</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span class="nav-toggle-bar"></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" data-nav="home" aria-current="page">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="courses.html" data-nav="courses">Courses</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact Us</a></li>
+        </ul>
+        <a class="btn btn-gold nav-cta" href="contact.html#enquiry">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- A. Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Career mentoring &amp; guidance · Hassan</span>
+          <h1 id="hero-title">Clarity in career choices. <span class="accent">Skills to excel.</span></h1>
+          <p class="lead">Career Spark is an experiential career mentoring and guidance venture that builds a holistic and unbiased career ecosystem — helping school and college students bring clarity to their career choices and develop the skills and mindset required to excel in their chosen field.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="contact.html#enquiry">Enquire Now <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost-light" href="courses.html">Explore Courses</a>
+          </div>
+          <ul class="hero-points">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>School &amp; college students</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Courses &amp; skill training</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Job consultancy</li>
+          </ul>
         </div>
-    </header>
-    
-    <!-- Navigation Bar UI -->
-    <nav>
-        <div class="navbar">
-                <a class="menu-item" href="index.html"><i class="fas fa-home"></i></a>
-                <i id="hamburger-icon" class="fas fa-bars menu-item"></i>
-                <div class="nav-all-items" id="nav-all-items">
-                  <p class="menu-line nav-items">|</p>
-                <a class="menu-item nav-items" href="about.html">About</a>
-                <p class="menu-line nav-items">|</p>
-                <a class="menu-item nav-items" href="courses.html">Courses</a>
-                <p class="menu-line nav-items">|</p>
-                <a class="menu-item nav-items" href="services.html">Services</a>
-                <p class="menu-line nav-items">|</p>
-                <a class="menu-item nav-items" href="gallery.html">Gallery</a>
-                <p class="menu-line nav-items">|</p>
-                <a class="menu-item nav-items" href="contact.html">Contact Us</a>
-                </div>
-            </div>
-             </nav>
-    
-    <!-- Main section UI -->
-    <main>
-
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img class="slide-img" src="Images/Career_spark (14).jpg"/>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img class="slide-img" src="Images/Career_spark (1).jpg"/>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img class="slide-img" src="Images/Career_spark (19).jpg"/>
-            </div>  
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img class="slide-img" src="Images/Career_spark (18).jpg" />
-            </div>          
-            <div class="button-sec">
-                <!-- <a href="about.html"><button class="all-btn position-btn-abt">About Us ...</button></a> -->
-              </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="hero-slides" data-slider aria-roledescription="carousel" aria-label="Photos from Career Spark programmes">
+            <figure class="hero-slide media" data-fallback="Career Spark programme photo"><img src="Images/Career_spark%20(14).jpg" data-cld="careerspark/gallery/career-spark-14" data-w="1000" alt="Career Spark programme — photo 1" width="1000" height="800" fetchpriority="high"></figure>
+            <figure class="hero-slide media" data-fallback="Career Spark programme photo"><img src="Images/Career_spark%20(1).jpg" data-cld="careerspark/gallery/career-spark-01" data-w="1000" alt="Career Spark programme — photo 2" width="1000" height="800" loading="lazy"></figure>
+            <figure class="hero-slide media" data-fallback="Career Spark programme photo"><img src="Images/Career_spark%20(19).jpg" data-cld="careerspark/gallery/career-spark-19" data-w="1000" alt="Career Spark programme — photo 3" width="1000" height="800" loading="lazy"></figure>
+            <figure class="hero-slide media" data-fallback="Career Spark programme photo"><img src="Images/Career_spark%20(18).jpg" data-cld="careerspark/gallery/career-spark-18" data-w="1000" alt="Career Spark programme — photo 4" width="1000" height="800" loading="lazy"></figure>
+            <div class="hero-dots"></div>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-badge-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <span><strong>Main branch: Hassan</strong>Also in Mysore, Bengaluru, Tumkur &amp; Chikmagalur</span>
+          </div>
         </div>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center; margin: 20px;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-
-        <div class="full-width-img">
-            <img src="Images/job colsultancy.jpg" alt="job consultancy"/>
-            <div class="button-sec">
-                <!-- <a href="services.html"><button class="all-btn position-btn">Read More >></button></a> -->
-              </div>
-          </div>
-          
-        <div class="all-headings-div">
-          <h1 class="all-headings-title">Courses Offered</h1>
-          </div>
-          <div class="courses-div">
-            <div class="courses-main-card">
-            <div class="courses-card">
-              <img src="Images/ce front.jpg" alt="gce"/>
-              <h2>Govt. Competitive Exams</h2>
-              <a href="courses.html#c1"><button class="courses-btn">Read More</button></a>
-            </div>
-            </div>
-            <div class="courses-main-card">
-            <div class="courses-card">
-              <img src="Images/cc.jpeg" alt="gce"/>
-              <h2>Computer Courses</h2>
-              <a href="courses.html#c2"><button class="courses-btn">Read More</button></a>
-            </div>
-            </div>
-            <div class="courses-main-card">
-            <div class="courses-card">
-              <img src="Images/fron se.jpeg" alt="gce"/>
-              <h2>Spoken English</h2>
-              <a href="courses.html#c3"><button class="courses-btn">Read More</button></a>
-            </div>
-            </div>
-            <div class="courses-main-card">
-            <div class="courses-card">
-              <img src="Images/csf.jpeg" alt="gce"/>
-              <h2>Corporate Sector Trainings</h2>
-              <a href="courses.html#c4"><button class="courses-btn">Read More</button></a>
-            </div></div>
-            <div class="courses-main-card">
-            <div class="courses-card">
-              <img src="Images/tf.jpg" alt="gce"/>
-              <h2>Tuition</h2>
-              <a href="courses.html#c5"><button class="courses-btn">Read More</button></a>
-            </div></div>
-          </div>
-
-          <div class="video-div">
-            <!-- <h1 class="all-headings-main">Overview Video</h1> -->
-        </div>
-   
-        <div class="button-sec">
-            <!-- <a href="gallery.html"><button class="all-btn btn-vid">View More '_'</button></a> -->
-          </div>
-
-          <div class="full-width-img">
-            <img src="Images/cropped-blm-career_services.png" alt="job consultancy"/>
-          </div>
-          <div class="button-sec">
-            <!-- <a href="contact.html"><button class="all-btn position-btn-get">Get In Touch : )</button></a> -->
-          </div>
-    </main>
-
-    <!-- Footer UI -->
-    <footer>
-      <div class="footer-frst">
-        <div class="link-footer">
-            <div class="frst-footer-p">
-              <!-- <p>Quick Links :</p> -->
-            </div>
-            <div class="ftr-l-r">
-              <div class="footer-left">
-                <a class="footer-links" href="index.html">Home</a>
-                <a class="footer-links" href="about.html">About Us</a>
-                <a class="footer-links" href="courses.html">Courses</a>
-              </div>
-              <div class="footer-right">
-                <a class="footer-links" href="services.html">Services</a>
-                <a class="footer-links" href="gallery.html">Gallery</a>
-                <a class="footer-links" href="contact.html">Contact Us</a>
-              </div>
-            </div>
-        </div>
-        <div class="add-footer">
-          <div class="frst-footer-p">
-            <!-- <p>  About:</p> -->
-          </div>
-          <div class="ftr-l-r">
-            <div class="footer-left">
-              <!-- <img class="footer-img" src="Images/Career_Spark-LOGO.png" alt="Career Spark logo"/> -->
-            </div>
-            <div class="footer-right">
-              <p class="footer-des center-align" ><b class="footer-h"><i class="fas fa-map-pin" ></i></b> K.R. Puram, Hassan - 573201, Karnataka</p>
-              <p class="footer-des center-align"><b class="footer-h"><i class="fas fa-phone-alt"></i> <a class="call-text" href="tel:8660995890"></b>8660995890</a></p>
-              <div class="footer-des" style="margin:0 auto;"><b class="footer-media">
-                <a href="https://www.facebook.com/pages/category/Education/Career-Spark-107368527398304/"><i class="fab fa-facebook"  style="color: blue; background-color: white;border-radius:50%;"></i></a>
-                </b>
-            </div>
-            </div>
-          </div>
       </div>
+    </section>
+
+    <!-- B. About -->
+    <section class="section" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="split-media reveal">
+          <div class="media" style="--ratio: 4 / 3" data-fallback="Job consultancy at Career Spark">
+            <img src="Images/job%20colsultancy.jpg" data-cld="careerspark/services/job-consultancy-banner" data-w="900" alt="Job consultancy at Career Spark" width="900" height="675" loading="lazy">
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <span class="eyebrow">About Career Spark</span>
+          <h2 id="about-title">A holistic, unbiased career ecosystem for students</h2>
+          <p class="lead">We work with school and college students to bring clarity to their career choices, and help them develop the relevant skills and mindset to excel in the field they choose.</p>
+          <ul class="check-list">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Experiential career mentoring and guidance</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Courses, coaching, tuitions and corporate-sector training</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Job consultancy and career-path advice for job seekers</li>
+          </ul>
+          <a class="btn btn-primary" href="about.html">More about us <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
       </div>
-      <div class="footer-sec">
-            <!-- <p class="footer-sec-text">&copy; 2021 CAREER SPARK, Edu Solutions & Technologies&nbsp|&nbsp</p>
-            <p class="footer-sec-text">Developed by Bhaskar Rao & Fiza Fathima</p>
-            <a class="footer-sec-text" href="#">&nbsp&nbsp<i class="far fa-arrow-alt-circle-up"></i> &nbsp&nbsp</a> -->
-       </div>
-    </footer>
-    
-    <script src="career_spark.js"></script>
-    <script src="hamburgericon.js"></script>
-    </body>
+    </section>
+
+    <!-- C. Courses -->
+    <section class="section section-surface" aria-labelledby="courses-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Courses offered</span>
+          <h2 id="courses-title">Learn the skills that move your career forward</h2>
+          <p>From competitive-exam coaching to computer skills and spoken English — choose a programme and enquire for the next batch.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="media" data-fallback="Govt. competitive exams"><img src="Images/ce%20front.jpg" data-cld="careerspark/courses/competitive-exams-card" data-w="640" alt="Coaching for government competitive exams" width="640" height="400" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Govt. Competitive Exams</h3>
+              <p>Coaching with the complete syllabus for UPSC, K.A.S, Banking, Railways, PDO, Navodaya and more.</p>
+              <a class="link-arrow" href="courses.html#competitive-exams">Read more<span class="visually-hidden"> about competitive exam coaching</span> <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card reveal reveal-delay-1">
+            <div class="media" data-fallback="Computer courses"><img src="Images/cc.jpeg" data-cld="careerspark/courses/computer-courses-card" data-w="640" alt="Computer courses at Career Spark" width="640" height="400" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Computer Courses</h3>
+              <p>Computer basics, Office, Nudi, DTP, typing, Tally with GST, Photoshop, C, C++, animation and web development.</p>
+              <a class="link-arrow" href="courses.html#computer-courses">Read more<span class="visually-hidden"> about computer courses</span> <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card reveal reveal-delay-2">
+            <div class="media" data-fallback="Spoken English"><img src="Images/fron%20se.jpeg" data-cld="careerspark/courses/spoken-english-card" data-w="640" alt="Spoken English classes" width="640" height="400" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Spoken English</h3>
+              <p>Communication English (one month) and Spoken English with Grammar (two months).</p>
+              <a class="link-arrow" href="courses.html#spoken-english">Read more<span class="visually-hidden"> about spoken English</span> <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="media" data-fallback="Corporate sector trainings"><img src="Images/csf.jpeg" data-cld="careerspark/courses/corporate-training-card" data-w="640" alt="Corporate sector training session" width="640" height="400" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Corporate Sector Trainings</h3>
+              <p>Soft skills, job skills, interview skills and group-discussion classes.</p>
+              <a class="link-arrow" href="courses.html#corporate-training">Read more<span class="visually-hidden"> about corporate sector trainings</span> <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card reveal reveal-delay-1">
+            <div class="media" data-fallback="Tuitions"><img src="Images/tf.jpg" data-cld="careerspark/courses/tuition-card" data-w="640" alt="Tuition classes" width="640" height="400" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Tuitions</h3>
+              <p>Tuitions for 10th, 12th, CET, NEET and competitive exams.</p>
+              <a class="link-arrow" href="courses.html#tuitions">Read more<span class="visually-hidden"> about tuitions</span> <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card reveal reveal-delay-2">
+            <div class="media" data-fallback="Royal Dreamz Academy"><img src="Images/_DSC6244%20copy.jpg" data-cld="careerspark/courses/royal-dreamz-photo" data-w="640" alt="Royal Dreamz Fashion Modelling and Acting Academy" width="640" height="400" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-tag">Royal Dreamz Academy</span>
+              <h3>Fashion Modelling &amp; Acting</h3>
+              <p>Fashion modelling (3 months), acting (6 months) and fashion events courses with diploma certification.</p>
+              <a class="link-arrow" href="courses.html#royal-dreamz">Read more<span class="visually-hidden"> about Royal Dreamz courses</span> <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <div class="section-foot"><a class="btn btn-outline" href="courses.html">View all courses <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </section>
+
+    <!-- D. Services -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our services</span>
+          <h2 id="services-title">Support beyond the classroom</h2>
+          <p>Career Spark also supports job seekers, B.Ed students and the wider community.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="feature reveal">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <h3>Job Consultancy</h3>
+            <p>Helping job seekers discover suitable opportunities, enhance their CV and improve their skill sets.</p>
+          </div>
+          <div class="feature reveal reveal-delay-1">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16 8-2 6-6 2 2-6z"/></svg></div>
+            <h3>Career-Path Guidance</h3>
+            <p>Consultants analyse qualifications, experience and interests to advise on career opportunities.</p>
+          </div>
+          <div class="feature reveal reveal-delay-2">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
+            <h3>Teaching Models</h3>
+            <p>Career Spark offers teaching models for B.Ed students.</p>
+          </div>
+          <div class="feature reveal reveal-delay-3">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+            <h3>Vanamala Foundation</h3>
+            <p>A registered charity conducting awareness programmes, free consulting classes and relief work.</p>
+          </div>
+        </div>
+        <div class="section-foot"><a class="btn btn-outline" href="services.html">Explore services <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </section>
+
+    <!-- E. Why choose us -->
+    <section class="section section-navy" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Why Career Spark</span>
+          <h2 id="why-title">Guidance students and parents can trust</h2>
+        </div>
+        <div class="grid grid-4">
+          <div class="feature reveal">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+            <h3>Experiential mentoring</h3>
+            <p>Guidance built on hands-on experience, not one-size-fits-all advice.</p>
+          </div>
+          <div class="feature reveal reveal-delay-1">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+            <h3>Holistic &amp; unbiased</h3>
+            <p>A career ecosystem that looks at the whole student and their interests.</p>
+          </div>
+          <div class="feature reveal reveal-delay-2">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V21h16"/></svg></div>
+            <h3>Led by an educator</h3>
+            <p>Our Managing Director holds M.A, B.Ed and postgraduate diplomas in English and Journalism.</p>
+          </div>
+          <div class="feature reveal reveal-delay-3">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4z"/><path d="M8 2v16M16 6v16"/></svg></div>
+            <h3>Five locations</h3>
+            <p>Main branch in Hassan, with branches in Mysore, Bengaluru, Tumkur and Chikmagalur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. Gallery preview -->
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Gallery</span>
+          <h2 id="gallery-title">Moments from our programmes</h2>
+          <p>Programmes organised by Career Spark and Vanamala Foundation.</p>
+        </div>
+        <div class="gallery-grid gallery-preview reveal">
+          <figure class="gallery-item"><div class="media" data-fallback="Programme photo"><img src="Images/Career_spark%20(2).jpg" data-cld="careerspark/gallery/career-spark-02" data-w="800" alt="Career Spark programme — photo 5" loading="lazy" width="800" height="800"></div></figure>
+          <figure class="gallery-item"><div class="media" data-fallback="Programme photo"><img src="Images/Career_spark%20(5).jpg" data-cld="careerspark/gallery/career-spark-05" data-w="500" alt="Career Spark programme — photo 6" loading="lazy" width="500" height="500"></div></figure>
+          <figure class="gallery-item"><div class="media" data-fallback="Programme photo"><img src="Images/Career_spark%20(6).jpg" data-cld="careerspark/gallery/career-spark-06" data-w="500" alt="Career Spark programme — photo 7" loading="lazy" width="500" height="500"></div></figure>
+          <figure class="gallery-item"><div class="media" data-fallback="Programme photo"><img src="Images/Career_spark%20(7).jpg" data-cld="careerspark/gallery/career-spark-07" data-w="500" alt="Career Spark programme — photo 8" loading="lazy" width="500" height="500"></div></figure>
+          <figure class="gallery-item"><div class="media" data-fallback="Programme photo"><img src="Images/Career_spark%20(8).jpg" data-cld="careerspark/gallery/career-spark-08" data-w="500" alt="Career Spark programme — photo 9" loading="lazy" width="500" height="500"></div></figure>
+        </div>
+        <div class="section-foot"><a class="btn btn-outline" href="gallery.html">View full gallery <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </section>
+
+    <!-- G. Contact CTA -->
+    <section class="section section-surface" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2 id="cta-title">Ready to talk about your career?</h2>
+            <p>Visit us at K.R. Puram, Hassan, call <a href="tel:+918660995890" style="color: var(--gold)">8660995890</a>, or send an enquiry online.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-gold" href="contact.html#enquiry">Send an enquiry</a>
+            <a class="btn btn-ghost-light" href="tel:+918660995890"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Career Spark — home">
+          <span class="brand-mark" aria-hidden="true">CS<img src="Images/Career_Spark-LOGO2.png" data-cld="careerspark/brand/career-spark-logo" data-w="120" alt="" width="48" height="48" loading="lazy"></span>
+          <span class="brand-text"><span class="brand-name">Career Spark</span><span class="brand-tag">Edu Solutions &amp; Technologies</span></span>
+        </a>
+        <p>An experiential career mentoring and guidance venture helping school and college students gain clarity in their career choices.</p>
+        <div class="social">
+          <a href="https://www.facebook.com/pages/category/Education/Career-Spark-107368527398304/" target="_blank" rel="noopener noreferrer" aria-label="Career Spark on Facebook (opens in a new tab)"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.1L14 2c-3.3 0-4 2.4-4 4v2.5H8V12h2v10h4V12h2.7l.4-3.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Courses</h2>
+        <ul>
+          <li><a href="courses.html#competitive-exams">Competitive Exams</a></li>
+          <li><a href="courses.html#computer-courses">Computer Courses</a></li>
+          <li><a href="courses.html#spoken-english">Spoken English</a></li>
+          <li><a href="courses.html#corporate-training">Corporate Trainings</a></li>
+          <li><a href="courses.html#tuitions">Tuitions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Get in touch</h2>
+        <ul class="footer-contact">
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><address style="font-style: normal">K.R. Puram, Hassan - 573201, Karnataka</address></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+918660995890">8660995890</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Career Spark — Edu Solutions &amp; Technologies. All rights reserved.</p>
+      <p>Hassan, Karnataka</p>
+    </div>
+  </footer>
+</body>
 </html>

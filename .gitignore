@@ -1,0 +1,15 @@
+# Secrets — never committed
+.env
+
+# Generated — can be rebuilt with `npm run config`
+assets/js/site-config.js
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Node (only needed for the build helper scripts)
+node_modules/

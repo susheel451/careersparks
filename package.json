@@ -1,0 +1,13 @@
+{
+  "name": "careersparks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Career Spark — Edu Solutions & Technologies website",
+  "type": "module",
+  "scripts": {
+    "config": "node scripts/build-config.mjs",
+    "dev": "npx -y serve . -l 5500 --no-clipboard",
+    "upload": "node scripts/upload.mjs"
+  },
+  "devDependencies": {}
+}
